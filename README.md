@@ -59,6 +59,8 @@ with excellent support for Angular apps that use routing.
 * `npm run typings` - runs the typings tool.
 * `npm run postinstall` - called by *npm* automatically *after* it successfully completes package installation. This script installs the TypeScript definition files this app requires.
 
+## Running the project
+
 ### Setup Chromecast
 You will first need to set up your Chromecast for development. Follow the instructions in the [Set up for development](https://developers.google.com/cast/docs/developers) section on the Google Developers site.
 
