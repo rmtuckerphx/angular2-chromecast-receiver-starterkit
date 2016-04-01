@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <!-- Set the base href -->
+    <base href="/">
+
+    <title>Angular 2 Chromecast Receiver Starter Kit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1600, initial-scale=1">
+
+    <link rel="stylesheet" href="./content/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./content/styles.css">
+    <!-- 1. Load libraries -->
+    <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>
+      <div class="vertical-center">
+        <h2 class="container text-center text-uppercase">Loading...</h2>
+      </div>
+    </my-app>
+  </body>
+</html>

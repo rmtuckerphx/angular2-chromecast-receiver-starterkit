@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.screen {
+  height: 100%;
+  padding: 5%;
+}
+
+.screen-title {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.droid-sans {
+  font-family: Droid Sans, sans-serif;
+}
+.droid-sans-mono {
+  font-family: Droid Sans Mono, monospace;
+}
+.droid-serif {
+  font-family: Droid Serif Regular, serif;
+}
+.cutive-mono {
+  font-family: Cutive Mono;
+}
+.short-stack {
+  font-family: Short Stack;
+}
+.quin {
+  font-family: Quintessential;
+}
+.alegreya {
+  font-family: Alegreya Sans SC;
+}
