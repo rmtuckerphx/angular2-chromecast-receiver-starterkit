@@ -1,4 +1,5 @@
 import {Injectable} from 'angular2/core';
+declare let cast;
 
 @Injectable()
 export class CastReceiverManagerService {
